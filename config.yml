@@ -1,0 +1,31 @@
+parks:
+  - name: GNP
+    id: 2725
+    start_date: 2022-07-27 # YYYY-MM-DD
+    end_date: 2022-07-29 # YYYY-MM-DD
+    poll: 1
+      
+  # - name: Rockies
+  #   id: 2907
+  #   start_date: 2022-08-01 # YYYY-MM-DD
+  #   end_date: 2022-08-04 # YYYY-MM-DD
+  #   poll: 5
+
+campgrounds:
+  - park_name: Teton 
+    start_date: 2022-07-29
+    end_date: 2022-08-01
+    poll: 5
+    camp_ids:
+      # - name: Colter
+      #  id: 258830 
+      - name: Jenny
+        id: 247664 
+      - name: Signal
+        id: 247663 
+
+
+
+
+
+
