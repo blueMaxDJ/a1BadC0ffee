@@ -43,7 +43,7 @@ class GNPLodgeScanner(object):
         search_link = self.link_gen()
         # Begin Scanning
         check_url = 1
-        bot = telegram.Bot("5385158546:AAE3dDq2wGz9cktstVlhm4E48uG1agYVUmk")
+        bot = telegram.Bot("<token>")
         while check_url:
             try:
                 # check_url = 0
@@ -56,7 +56,7 @@ class GNPLodgeScanner(object):
                 time.sleep(15)
                 found = self.check(browser.page_source)
                 if found:
-                    bot.send_message(-1001539975375, text=f'{self.tele_message}')
+                    bot.send_message('<chat id>', text=f'{self.tele_message}')
                     self.tele_message = ""
                 time.sleep(15)
             except selenium.common.exceptions.TimeoutException:
