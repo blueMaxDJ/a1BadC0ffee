@@ -63,7 +63,7 @@ def search_by_park_id(start_date, end_date, park_id, park_name):
     return match_count
 
 
-bot = telegram.Bot("5385158546:AAE3dDq2wGz9cktstVlhm4E48uG1agYVUmk")
+bot = telegram.Bot("<token>")
 poll_cnt = 1
 while(1):
     match_count = 0
@@ -88,7 +88,8 @@ while(1):
 
         print(f"Sending telegram message for poll_cnt {poll_cnt}")
         # telegram_send.send(messages=[f'{tele_message}'])
-        bot.send_message(-1001539975375, text=f'{tele_message}')
+        
+        bot.send_message('<chat id>', text=f'{tele_message}')
 
     poll_cnt = poll_cnt + 1
     time.sleep(20)
